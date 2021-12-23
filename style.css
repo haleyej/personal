@@ -76,7 +76,7 @@ a.skip:focus{
     justify-content: center;
     align-items: center;
     grid-gap:  15px;
-    margin: 25% auto;
+    margin: 15% auto;
 }
 
 h1{
@@ -92,6 +92,7 @@ h1{
 #tagline{
     color: rgb(139, 139, 139);
     text-transform: lowercase;
+    text-align: center;
 }
 
 #landing-img{
@@ -119,7 +120,8 @@ h2{
 
 #prev-links{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
     justify-content: center;
 }
 
@@ -129,11 +131,10 @@ h2{
     padding: 10px;
     margin: 5px;
     text-align: center;
-    max-width: 100px;
 }
 
 .prev-item a{
-    margin: 25% auto 25% auto;
+    margin: 50px auto 25% auto;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -149,17 +150,48 @@ h2{
 }
 
 #bbd{
-    grid-column: 3 / 4;
+    grid-column: 1 / 2;
     background-color: mediumturquoise;
 }
 
 #twitter{
-    grid-column: 4 / 5;
+    grid-column: 2 / 3;
     background-color: plum;
 }
 
-/* desktop/table view */
+/* projects page */
+#proj{
+    margin: 50px auto;
+}
+.project-container{
+    display: grid;
+    grid-gap: 15px;
+    max-width: 80%;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
 
+.project-container .description, .project-container h2{
+    grid-column: 1 / -1;
+}
+
+.project-container h2{
+    font-size: 1.15em;
+}
+
+/* specific projects */
+#tmd-proj{
+    grid-template-columns: repeat(1fr, 5);
+}
+
+#tmd-proj img{
+    grid-column: span 1;
+}
+
+
+/* desktop/table view */
 @media screen and (min-width: 800px){
     .topnav{
         display: none;
