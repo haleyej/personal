@@ -1,5 +1,9 @@
-/* skip to content */
+/* body */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
+/* skip to content */
 a.skip{
     background: white;
     left: 0;
@@ -32,7 +36,8 @@ a.skip:focus{
   
   /* Style navigation menu links */
   .topnav a {
-    color: white;
+    color: rgb(0, 0, 0);
+    background-color: #79b19e;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -41,7 +46,7 @@ a.skip:focus{
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background:  #79b19e;
     display: block;
     position: absolute;
     right: 0;
@@ -50,12 +55,113 @@ a.skip:focus{
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #fff;
     color: black;
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #fff;
+    color: #333;
+  }
+
+  #stars{
+      max-height: 16px;
+  }
+
+/* about container */
+#about{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    grid-gap:  15px;
+    margin: 25% auto;
+}
+
+h1{
+    grid-column: 1  / -1;
+    justify-self: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-decoration: 3px solid underline #79b19e;
+    text-align: center;
+}
+
+#tagline{
+    color: rgb(139, 139, 139);
+    text-transform: lowercase;
+}
+
+#landing-img{
+    /* border-radius: 50%; */
+    border: 8px solid #79b19e; 
+    justify-self: center;
+    max-height: 300px;
+}
+
+.blurb{
+    justify-self: start;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#prev{
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-decoration: 3px solid underline #79b19e;
+    font-family: "Raleway", sans-serif;
+}
+
+#prev-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.prev-item{
+    grid-column: 1 / span 1;
+    background-color: #79b19e;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    max-width: 100px;
+}
+
+.prev-item a{
+    margin: 25% auto 25% auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#research{
+    grid-column: 1 / 2;
+    background-color: lightblue;
+}
+
+#tmd{
+    grid-column: 2 / 3;
+    background-color: lightsalmon;
+}
+
+#bbd{
+    grid-column: 3 / 4;
+    background-color: mediumturquoise;
+}
+
+#twitter{
+    grid-column: 4 / 5;
+    background-color: plum;
+}
+
+/* desktop/table view */
+
+@media screen and (min-width: 800px){
+    .topnav{
+        display: none;
+    }
   }
