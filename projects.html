@@ -19,13 +19,13 @@
     <a class = "skip" href="#about">Skip to Main Content</a>
     <!-- mobile nav -->
     <div class="topnav">
-        <a href="#home" class="active">
+        <a href="index.html" class="active">
             <img src="stars.png" id='stars'>
         </a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
           <a href="#about">About</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -33,6 +33,14 @@
           <i class="fa fa-bars"></i>
         </a>
     </div>
+    <header>
+        <nav>
+          <img src='stars.png' id='stars' class='header-links'></img>
+          <a class='header-links' href="">asfkha</a>
+          <a class='header-links' href="">asf</a>
+          <a class='header-links' href="">afsfask</a>
+      </nav>
+    </header>
     <main>
         <script src="nav.js"></script> 
         <h1 id='proj'>Projects</h1>
@@ -41,7 +49,7 @@
             <div clas='description'>
                 <p>This semester I joined <a href="https://blablablab.si.umich.edu/">blablablab</a>, which is objectively the 
                     reserach group with the coolest name at Michigan. I research how rhetorical frames impact engagement in Tweets about immigration
-                    and how the rhetorical frames in quote tweets and replies differ from the original tweet.
+                    and how the frames in quote tweets and replies differ from frames in the original tweet.
                 </p>
                 <p>
                 </br>My research is a spin-off of 
@@ -55,6 +63,30 @@
                     </br>
                 </p>
             </div>
+        </div>
+        <div class='project-container' id='covid-proj'>
+            <h2>COVID-19 Spread, Unemployment and Mobility Patterns</h2>
+            <div class='description'>
+                <p>
+                    As a final project for my class SI 206, Data-Oriented Programming,  
+                    I worked with two of my classmates to process data from APIs and web-scrapping
+                    into a database and combine them into visualizations. My group examined the relationship
+                    between COVID-19 cases, unemployment claims, and mobility patterns from March 2020 to March 2021.
+                </p>
+                </br>
+                <p>
+                    In my group, I was responsible for collecting data from the 
+                    <a href="https://www.bts.gov/browse-statistical-products-and-data/covid-related/changes-mobility-state-0">Bureau of Transportation Statistic's API.</a>
+                    I also built the database that contained all of the data we had collected.  
+                </p>
+            </div>
+            <img class='covid-span' src='covid_data/viz1.png'>
+            <img src='covid_data/viz2_cropped.png'>
+            <img src='covid_data/viz3_cropped.png'>
+            <p class='tagline covid-span'>visualizations from the project</p>
+            <img src='covid_data/db.png'>
+            <img src='covid_data/db.png'>
+            <p class='tagline covid-span'>database & database schema</p>
         </div>
         <div class='project-container' id='tmd-proj'>
             <h2>The Michigan Daily</h2>
