@@ -1,6 +1,7 @@
 /* to do 
 -- drawings for landing page
 -- drawing of database schema
+-- bold font
 */
 
 
@@ -61,7 +62,7 @@ a.skip:focus{
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background:  #b5c6b4;
+    background:  #adcab8;
     display: block;
     position: absolute;
     right: 0;
@@ -296,7 +297,7 @@ input[type=text], select {
   }
 
 /* desktop/table view */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 750px){
     /* hide and reveal  header stuff */
     .topnav{
         display: none;
@@ -304,6 +305,15 @@ input[type=text], select {
     
     .header-links{
         display: inline;
+        padding: 10px;
+    }
+
+    .header-links:first-of-type{
+        padding-left: 15px;
+    }
+
+    #stars{
+        padding: 0px;
     }
 
     header{
@@ -329,4 +339,43 @@ input[type=text], select {
     #stars{
         max-height: 30px;
     }
+
+    /* style landing page */
+    #about{
+        max-width: 700px;
+        grid-template-columns: auto auto;
+    }
+
+    .landing-title, .landing-tagline,  #prev-links{
+        grid-column: 1 / -1;
+    }
+
+    #landing-img{
+        grid-row: 3 / span 2;
+    }
+
+    .prev-item{
+        padding: 20px;
+    } 
+
+    #research, #tmd, #twitter{
+        align-self: flex-end;
+    }
+
+    /* projects page */
+    #proj{
+        margin-top: 75px;
+    }
+    .project-container{
+        max-width: 750px;
+        margin-bottom: 150px;
+    }
+
+    /* contact page */
+    .contact-container{
+        max-width: 750px;
+        margin: auto;
+    }
+
+
   }
