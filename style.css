@@ -53,7 +53,7 @@ a.skip:focus{
   /* Style navigation menu links */
   .topnav a {
     color: rgb(0, 0, 0);
-    background-color: #adcab8;
+    background-color: #AABFB8;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -62,7 +62,7 @@ a.skip:focus{
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background:  #adcab8;
+    background:  #AABFB8;
     display: block;
     position: absolute;
     right: 0;
