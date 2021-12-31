@@ -13,10 +13,10 @@ body{
 
 /* Selection Color */
 ::selection {
-    background: #c3c6e6; /* WebKit/Blink Browsers */
+    background: #AABFB8; /* WebKit/Blink Browsers */
   }
 ::-moz-selection {
-    background: #c3c6e6; /* Gecko Browsers */
+    background: #AABFB8; /* Gecko Browsers */
   }
 
 /* skip to content */
@@ -105,25 +105,25 @@ h1{
     font-family: "Raleway", sans-serif;
     font-size: 1.9em;
     text-transform: uppercase;
-    text-decoration: 3px solid underline #b5c6b4;
+    text-decoration: 3px solid underline #AABFB8;
     text-align: center;
 }
 
 .tagline{
-    color: rgb(139, 139, 139);
+    color: #595959;
     text-transform: lowercase;
     text-align: center;
 }
 
 #landing-img{
     /* border-radius: 50%; */
-    border: 8px solid #b5c6b4; 
+    border: 8px solid #AABFB8; 
     justify-self: center;
     max-height: 300px;
 }
 
-.blurb{
-    justify-self: start;
+#landing-blurb{
+    margin-top: 10px
 }
 
 h2{
@@ -134,7 +134,7 @@ h2{
 #prev{
     font-size: 1.5em;
     margin-top: 50px;
-    text-decoration: 3px solid underline #b5c6b4;
+    text-decoration: 3px solid underline #AABFB8;
     font-family: "Raleway", sans-serif;
 }
 
@@ -147,7 +147,7 @@ h2{
 
 .prev-item{
     grid-column: 1 / span 1;
-    background-color: #b5c6b4;
+    background-color: #AABFB8;
     padding: 10px;
     margin: 5px;
     text-align: center;
@@ -168,22 +168,22 @@ h2{
 
 #covid{
     grid-column: 2 / 3;
-    background-color: yellowgreen;
+    background-color: lightblue;
 }
 
 #tmd{
     grid-column: 1 / 2;
-    background-color: lightsalmon;
+    background-color: lightblue;
 }
 
 #bbd{
     grid-column: 2 / 3;
-    background-color: mediumturquoise;
+    background-color: lightblue;
 }
 
 #twitter{
     grid-column: 1 / -1;
-    background-color: plum;
+    background-color: lightblue;
 }
 
 /* projects page */
@@ -308,12 +308,19 @@ input[type=text], select {
         padding: 10px;
     }
 
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .header-links:first-of-type{
         padding-left: 15px;
     }
 
     #stars{
         padding: 0px;
+        margin-left: 10px;
     }
 
     header{
@@ -322,18 +329,18 @@ input[type=text], select {
         position: -webkit-sticky;
         top: 0px; 
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-self: flex-end;
+        /* display: flex;
+        flex-direction: row; */
         padding: 10px 20px;
         color: #43434f;  
+        padding: 15px;
     }
 
     header a, header a:hover, header a:visited, h1 a{
         text-decoration: none;
         -webkit-text-decoration: none;
         color: hsl(240, 8%, 29%);
+        justify-self: center;
     }
 
     #stars{
@@ -344,18 +351,29 @@ input[type=text], select {
     #about{
         max-width: 700px;
         grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
     }
 
     .landing-title, .landing-tagline,  #prev-links{
         grid-column: 1 / -1;
     }
 
+    .landing-tagline{
+        margin: 7.5px;
+    }
+
     #landing-img{
-        grid-row: 3 / span 2;
+        grid-row: 3 / span 1;
+        margin-right: 15px;
+    }
+
+    #landing-blubr, .blurb{
+        justify-self: center;
     }
 
     .prev-item{
         padding: 20px;
+        font-size: 1em;
     } 
 
     #research, #tmd, #twitter{
